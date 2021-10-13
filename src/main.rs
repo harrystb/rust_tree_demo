@@ -107,6 +107,8 @@ fn main() {
 
     let top = &mut doc.nodes[0];
     top.add_child("2nd").add_child("2nd-2");
+    let nextgen = &mut top.children[0];
+    nextgen.add_child("3rd").add_child("3rd2");
     println!("{}", top.to_string());
     println!("Selecting '2nd'");
     let p = doc.select_first("2nd").unwrap();
