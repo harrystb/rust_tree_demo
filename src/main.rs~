@@ -1,0 +1,8 @@
+struct Node {
+    value: String,
+    children: Node,
+}
+
+fn main() {
+    println!("Hello, world!");
+}
